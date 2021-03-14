@@ -1,16 +1,12 @@
-import requests
+# Print the last item from year and pop
+print(year[-1])
+print(pop[-1])
 
-request=requests.get('http://api.open-notify.org/')
+# Import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
-print(request.status_code)
+# Make a line plot: year on the x-axis, pop on the y-axis
+plt.plot(year, pop)
 
-print(request.text)
-
-data=requests.get("http://api.open-notify.org/iss-now.json")
-
-print(data.text)
-
-print(data.status_code)
-
-
-
+# Display the plot with plt.show()
+plt.show()
